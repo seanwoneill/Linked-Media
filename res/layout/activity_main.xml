@@ -53,6 +53,6 @@
         android:paddingBottom="5dp"
         android:paddingLeft="5dp"
         android:paddingTop="15dp"
-        android:src="@drawable/grumpycat_hdpi" />
+        android:src="@drawable/rollingball_hdmi" />
 
 </RelativeLayout>

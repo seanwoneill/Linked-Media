@@ -26,6 +26,14 @@
             android:name=".JabberwockyActivity"
             android:label="@string/title_activity_jabberwocky" >
         </activity>
+        <activity
+            android:name=".WaroftheWorldsActivity"
+            android:label="@string/title_activity_war_of_the_worlds" >
+        </activity>
+        <activity
+            android:name=".RollingBallActivity"
+            android:label="@string/title_activity_rolling_ball" >
+        </activity>
     </application>
 
 </manifest>

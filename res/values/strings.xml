@@ -3,11 +3,21 @@
 
     <string name="app_name">Linked Media</string>
     <string name="action_settings">Settings</string>
+
+    <!-- Main page button Content Descriptions -->
     <string name="jabber">Jabberwocky</string>
     <string name="nasa">Nasa Logo</string>
     <string name="war">War of the Worlds Book Cover</string>
-    <string name="ball">Grumpy Cat &#58; Rolling Ball</string>
+    <string name="ball">Rolling Ball</string>
+
+    <!-- Title activities - name strings -->
     <string name="title_activity_jabberwocky">Jabberwocky</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_war_of_the_worlds">War of the Worlds</string>
+    <string name="title_activity_rolling_ball">Rolling Ball</string>
+
+    <!-- Jabberwocky WebView button text -->
+    <string name="wikipedia">Wikipedia&#58; \nJabberwocky </string>
+    <string name="Jabberwocky">the Wiffling Beast&#33; </string>
+    
 
 </resources>

@@ -8,8 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
-import apps101.javabook.MainActivity;
-import apps101.javabook.NasaActivity;
+
 
 public class MainActivity extends Activity {
 
@@ -48,24 +47,14 @@ public class MainActivity extends Activity {
 		// String message = editText.getText().toString();
 		// intent.putExtra(EXTRA_MESSAGE, message);
 		// startActivity(intent);
-		
-		// Remember Emily's app which also used Intents?
-		// - You could start a new activity when responding to a button click.
-		// By taking this code and putting inside your onClick method
-		Intent intent = new Intent();
-		intent.setClass(this, NasaActivity.class);
-		if (Math.random() > 0.5) {
-			// Open the Java Book instead!
-			intent.setClass(this, MainActivity.class);
-		}
-		// Soon (but not immediately) 
+
+		Intent jabIntent = new Intent();
+		jabIntent.setClass(this, JabberwockyActivity.class);
+				// Soon (but not immediately) 
 		// a new Activity will be created and shown to the user ...
-		startActivity(intent);
+		startActivity(jabIntent);
 		// As part of starting another activity
 		// onPause() and onStop() will soon be called on this Surprise Activity
-
-		finish(); // Experiment! - I wonder what finish() does :-)
-		// e.g. What happens if you remove it by either adding  '//' before it
-		// or deleting the entire line
+		finish();
 	}
 }

@@ -9,7 +9,7 @@ import android.webkit.WebView;
 
 public class JabberwockyActivity extends Activity {
 	
-	WebView jabWebView = (WebView) findViewById(R.id.webView1);
+	WebView jabWebView = (WebView) findViewById(R.id.jabWebView1);
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +29,15 @@ public class JabberwockyActivity extends Activity {
 		// to the default
 		// system behavior (probably exit the activity)
 		return super.onKeyDown(keyCode, event);
+	}
+	
+	@Override
+	protected void onResume(){
+		
+	}
+	
+	@Override
+	protected void onPause() {
+		
 	}
 }
