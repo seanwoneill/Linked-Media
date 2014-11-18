@@ -9,7 +9,7 @@ Exercise in Introductory Android Application Programming
 
 Requirements:
 
-For privacy, the package name should not include your real name. Remember to use the format abc.def (lowercase words, separated with periods).
+For privacy, the package name should not include your real name. Remember to use the format abc.def (lowercase words, separated with periods).\\n
 The app icon and name is up to you but should represent the contents of the app in some simple way.
 The minimum SDK value should be 10.
 Create 4 activities; one for each of the 4 items listed above. Each activity will use a WebView to display the locally-stored files.\n
