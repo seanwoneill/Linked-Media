@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Linked Media</string>
+    <string name="action_settings">Settings</string>
+    <string name="jabber">Jabberwocky</string>
+    <string name="nasa">Nasa Logo</string>
+    <string name="war">War of the Worlds Book Cover</string>
+    <string name="ball">Grumpy Cat &#58; Rolling Ball</string>
+    <string name="title_activity_jabberwocky">Jabberwocky</string>
+    <string name="hello_world">Hello world!</string>
+
+</resources>
