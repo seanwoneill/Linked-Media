@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:onClick="click2Wiki"
         android:padding="8dp"
         android:text="@string/wikipedia"
         android:textSize="15dp" />
@@ -28,6 +29,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_toRightOf="@id/wikipedia"
+        android:onClick="click2Beast"
         android:paddingBottom="8dp"
         android:paddingRight="8dp"
         android:paddingTop="8dp"

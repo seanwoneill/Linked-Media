@@ -26,7 +26,10 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:contentDescription="@string/nasa"
-        android:padding="5dp"
+        android:onClick="clickNASA"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
         android:scaleType="center"
         android:src="@drawable/nasa_hdpi" />
 
@@ -37,6 +40,7 @@
         android:layout_alignParentLeft="true"
         android:layout_below="@id/jabberwocky"
         android:contentDescription="@string/war"
+        android:onClick="clickWaroftheWorlds"
         android:paddingBottom="5dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
@@ -50,8 +54,9 @@
         android:layout_alignParentRight="true"
         android:layout_below="@id/nasa"
         android:contentDescription="@string/ball"
+        android:onClick="clickRollingBall"
         android:paddingBottom="5dp"
-        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
         android:paddingTop="15dp"
         android:src="@drawable/rollingball_hdmi" />
 

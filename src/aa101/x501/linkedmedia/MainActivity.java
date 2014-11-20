@@ -4,11 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.webkit.WebView;
+
 
 public class MainActivity extends Activity {
 
@@ -17,14 +15,6 @@ public class MainActivity extends Activity {
 		Log.e("Main", "onCreate");
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-	}
-
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		Log.e("Main", "onCreateOptionsMenu");
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
 	}
 
 	@Override
@@ -59,4 +49,28 @@ public class MainActivity extends Activity {
 		// jabIntent.putExtra("key", value); // Optional parameters
 		MainActivity.this.startActivity(jabIntent);
 	}
+
+	public void clickNASA(View view) {
+		Log.e("Main", "clickNASA");
+		Intent nasaIntent = new Intent(MainActivity.this, NasaActivity.class);
+		// jabIntent.putExtra("key", value); // Optional parameters
+		MainActivity.this.startActivity(nasaIntent);
+	}
+
+	public void clickWaroftheWorlds(View view) {
+		Log.e("Main", "clickWarW");
+		Intent warIntent = new Intent(MainActivity.this,
+				WaroftheWorldsActivity.class);
+		// jabIntent.putExtra("key", value); // Optional parameters
+		MainActivity.this.startActivity(warIntent);
+	}
+
+	public void clickRollingBall(View view) {
+		Log.e("Main", "clickRollingBall");
+		Intent ballIntent = new Intent(MainActivity.this,
+				RollingBallActivity.class);
+		// jabIntent.putExtra("key", value); // Optional parameters
+		MainActivity.this.startActivity(ballIntent);
+	}
+
 }

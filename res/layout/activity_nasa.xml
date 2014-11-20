@@ -5,11 +5,10 @@
     tools:context="${relativePackage}.${activityClass}" >
 
     <WebView
-        android:id="@+id/warWebView1"
+        android:id="@+id/nasaWebView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:onClick="clickWaroftheWorlds" />
+        android:layout_centerVertical="true" />
 
 </RelativeLayout>
