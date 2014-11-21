@@ -20,4 +20,7 @@
     <string name="wikipedia">Wikipedia&#58; \nJabberwocky </string>
     <string name="Jabberwocky">the Wiffling Beast&#33; </string>
 
+    <!-- Grump Cat image -->
+    <string name="grumpy">Grumpy Cat&#44; the Frumious Beast </string>
+
 </resources>

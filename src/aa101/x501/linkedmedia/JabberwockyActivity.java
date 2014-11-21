@@ -20,22 +20,39 @@ public class JabberwockyActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_jabberwocky);
 		WebView jabPoint = (WebView) findViewById(R.id.jabWebView1);
+//		jabPoint.getSettings().setLoadWithOverviewMode(true);
+//		jabPoint.getSettings().setUseWideViewPort(true);
 		jabPoint.getSettings().setBuiltInZoomControls(true);
 		jabPoint.loadUrl("file:///android_asset/jabberwocky.html");
 	}
 
-	// @Override
-	// public boolean onCreateOptionsMenu(Menu menu) {
-	// Log.e("Jabberwocky", "onCreateOptionsMenu");
-	// // Inflate the menu; adds items to the action bar if it is parent
-	// getMenuInflater().inflate(R.menu.main, menu);
-	// return true;
-	// }
+	public void clickToWiki(View v) {
+		Log.e("Jabberwocky", "clickWiki");
+		// String jabURL = "http://en.wikipedia.org/wiki/Jabberwocky";
+		Uri jabURL = Uri.parse("http://en.wikipedia.org/wiki/Jabberwocky");
+		Intent jabWiki = new Intent(Intent.ACTION_VIEW, jabURL);
+		// jabWiki.setData(Uri.parse(jabURL));
+		startActivity(jabWiki);
+	}
+
+	public void click2Beast(View v) {
+		Log.e("Jabberwocky", "clickWafflingBeast");
+		String catURL = "file:///android_res/grumpycat.xml";
+		Intent catPoint = new Intent(Intent.ACTION_VIEW);
+		catPoint.setData(Uri.parse(catURL));
+//		catPoint.setType(catURL);
+//		startActivity(catPoint);
+//		
+		jabPoint.loadUrl(catURL);
+//		
+//		jabPoint.loadUrl("file:///android_asset/grumpycat_hdpi");
+	}
 
 	@Override
 	protected void onResume() {
 		Log.e("Jabberwocky", "onResume");
 		jabPlayer = MediaPlayer.create(this, R.raw.jm2halloween);
+		// jabPlayer = MediaPlayer.create(this, R.assets.jm2halloween);
 		jabPlayer.start();
 		super.onResume();
 	}
@@ -43,8 +60,6 @@ public class JabberwockyActivity extends Activity {
 	@Override
 	protected void onPause() {
 		Log.e("Jabberwocky", "onPause");
-		// jabPlayer.stop();
-		// jabPlayer.release();
 		jabPlayer.pause();
 		super.onPause();
 	}
@@ -54,18 +69,5 @@ public class JabberwockyActivity extends Activity {
 		jabPlayer.stop();
 		jabPlayer.release();
 		super.onStop();
-	}
-
-	protected void click2Wiki(View view) {
-		Log.e("Jabberwocky", "clickWiki");
-		String jabURL = "http://en.wikipedia.org/wiki/Jabberwocky";
-		Intent jabWiki = new Intent(Intent.ACTION_VIEW);
-		jabWiki.setData(Uri.parse(jabURL));
-		startActivity(jabWiki);
-	}
-
-	protected void click2Beast() {
-		Log.e("Jabberwocky", "clickWafflingBeast");
-		jabPoint.loadUrl("file:///android_asset/grumpycat_hdpi");
 	}
 }

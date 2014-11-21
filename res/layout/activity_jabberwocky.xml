@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:onClick="click2Wiki"
+        android:onClick="clickToWiki"
         android:padding="8dp"
         android:text="@string/wikipedia"
         android:textSize="15dp" />
