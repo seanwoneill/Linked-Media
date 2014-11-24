@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 
-
 public class MainActivity extends Activity {
 
 	@Override
@@ -20,9 +19,6 @@ public class MainActivity extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Log.e("Main", "onOptionsItemsSelected");
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
 			return true;
@@ -30,47 +26,34 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	public void clickJabber(View view) {
-		/*
-		 * The following 4 lines of code are provided from android.com as a
-		 * example of how to call another activity
-		 */
-		/*
-		 * Log.e("Main", "clickJabber");Intent jabIntent = new Intent();
-		 * jabIntent.setClass(this, JabberwockyActivity.class); // Soon (but not
-		 * immediately) // a new Activity will be created and shown to the user
-		 * ...startActivity(jabIntent); // As part of starting another activity
-		 * // onPause() and onStop() will soon be called on this Surprise
-		 * Activityfinish();
-		 */
-		Log.e("Main", "clickJabber");
-		Intent jabIntent = new Intent(MainActivity.this,
-				JabberwockyActivity.class);
-		// jabIntent.putExtra("key", value); // Optional parameters
-		MainActivity.this.startActivity(jabIntent);
+	// public void clickJabber(View view) {
+	// Log.e("Main", "clickJabber");
+	// Intent jabIntent = new
+	// Intent(MainActivity.this,JabberwockyActivity.class);
+	// MainActivity.this.startActivity(jabIntent);
+	// }
+
+	public void clickPiano(View view) {
+		Log.e("Main", "clickPiano");
+		Intent pianoIntent = new Intent(MainActivity.this, PianoActivity.class);
+		MainActivity.this.startActivity(pianoIntent);
 	}
 
-	public void clickNASA(View view) {
-		Log.e("Main", "clickNASA");
-		Intent nasaIntent = new Intent(MainActivity.this, NasaActivity.class);
-		// jabIntent.putExtra("key", value); // Optional parameters
-		MainActivity.this.startActivity(nasaIntent);
+	public void clickGrumpy(View view) {
+		Log.e("Main", "clickGrumpy");
+		Intent grumpyIntent = new Intent(MainActivity.this,GrumpyActivity.class);
+		MainActivity.this.startActivity(grumpyIntent);
 	}
-
-	public void clickWaroftheWorlds(View view) {
-		Log.e("Main", "clickWarW");
-		Intent warIntent = new Intent(MainActivity.this,
-				WaroftheWorldsActivity.class);
-		// jabIntent.putExtra("key", value); // Optional parameters
-		MainActivity.this.startActivity(warIntent);
+		
+		public void clickCheese(View view) {
+			Log.e("Main", "clickCheese");
+			Intent cheeseIntent = new Intent(MainActivity.this,CheezActivity.class);
+			MainActivity.this.startActivity(cheeseIntent);
 	}
-
-	public void clickRollingBall(View view) {
-		Log.e("Main", "clickRollingBall");
-		Intent ballIntent = new Intent(MainActivity.this,
-				RollingBallActivity.class);
-		// jabIntent.putExtra("key", value); // Optional parameters
-		MainActivity.this.startActivity(ballIntent);
+		
+		public void clickChip(View view) {
+			Log.e("Main", "clickChip");
+			Intent chipIntent = new Intent(MainActivity.this,ChipmunkActivity.class);
+			MainActivity.this.startActivity(chipIntent);
 	}
-
 }

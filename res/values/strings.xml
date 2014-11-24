@@ -5,22 +5,20 @@
     <string name="action_settings">Settings</string>
 
     <!-- Main page button Content Descriptions -->
-    <string name="jabber">Jabberwocky</string>
-    <string name="nasa">Nasa Logo</string>
-    <string name="war">War of the Worlds Book Cover</string>
-    <string name="ball">Rolling Ball</string>
+    <string name="piano">Piano</string>
+    <string name="frown">Frowny Face</string>
+    <string name="cheese">Multiple Cheeses</string>
 
     <!-- Title activities - name strings -->
-    <string name="title_activity_jabberwocky">Jabberwocky</string>
-    <string name="title_activity_war_of_the_worlds">War of the Worlds</string>
-    <string name="title_activity_rolling_ball">Rolling Ball</string>
-    <string name="title_activity_nasa">University of Illinois at NASA</string>
+    <string name="title_activity_piano">Piano Cat</string>
+    <string name="title_activity_grumpy">Grumpy Cat</string>
+    <string name="title_activity_cheez">Cheezburger Cat</string>
+    <string name="title_activity_chipmunk">Dramatic Chipmunk</string>
 
-    <!-- Jabberwocky WebView button text -->
-    <string name="wikipedia">Wikipedia&#58; \nJabberwocky </string>
-    <string name="Jabberwocky">the Wiffling Beast&#33; </string>
-
-    <!-- Grump Cat image -->
-    <string name="grumpy">Grumpy Cat&#44; the Frumious Beast </string>
+    <!-- Odds 'n' Ends -->
+    <string name="grumpy">Grumpy Cat</string>
+    <string name="pianocat">Cat playing piano</string>
+    <string name="cheesecat">Cheezburger Cat</string>
+    <string name="chipmunk">Dramatic Chipmunk</string>
 
 </resources>

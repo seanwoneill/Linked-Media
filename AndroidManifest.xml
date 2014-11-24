@@ -25,20 +25,20 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".JabberwockyActivity"
-            android:label="@string/title_activity_jabberwocky" >
+            android:name=".PianoActivity"
+            android:label="@string/title_activity_piano" >
         </activity>
         <activity
-            android:name=".WaroftheWorldsActivity"
-            android:label="@string/title_activity_war_of_the_worlds" >
+            android:name=".GrumpyActivity"
+            android:label="@string/title_activity_grumpy" >
         </activity>
         <activity
-            android:name=".RollingBallActivity"
-            android:label="@string/title_activity_rolling_ball" >
+            android:name=".CheezActivity"
+            android:label="@string/title_activity_cheez" >
         </activity>
         <activity
-            android:name=".NasaActivity"
-            android:label="@string/title_activity_nasa" >
+            android:name=".ChipmunkActivity"
+            android:label="@string/title_activity_chipmunk" >
         </activity>
     </application>
 

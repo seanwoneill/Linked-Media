@@ -9,55 +9,58 @@
     tools:context="aa101.x501.linkedmedia.MainActivity" >
 
     <ImageButton
-        android:id="@+id/jabberwocky"
+        android:id="@+id/cheez"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:contentDescription="@string/jabber"
-        android:onClick="clickJabber"
-        android:padding="5dp"
-        android:src="@drawable/jabberwocky_ldpi" />
-
-    <ImageButton
-        android:id="@+id/nasa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:contentDescription="@string/nasa"
-        android:onClick="clickNASA"
-        android:paddingBottom="5dp"
-        android:paddingRight="5dp"
-        android:paddingTop="5dp"
-        android:scaleType="center"
-        android:src="@drawable/nasa_hdpi" />
-
-    <ImageButton
-        android:id="@+id/war"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@id/jabberwocky"
-        android:contentDescription="@string/war"
-        android:onClick="clickWaroftheWorlds"
+        android:contentDescription="@string/cheese"
+        android:onClick="clickCheese"
         android:paddingBottom="5dp"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
-        android:paddingTop="15dp"
-        android:src="@drawable/war_of_the_worlds_cover_hdpi" />
+        android:paddingTop="40dp"
+        android:src="@drawable/cheese" />
 
     <ImageButton
-        android:id="@+id/rollingBall"
+        android:id="@+id/grumpyface"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/nasa"
-        android:contentDescription="@string/ball"
-        android:onClick="clickRollingBall"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/cheez"
+        android:contentDescription="@string/frown"
+        android:onClick="clickGrumpy"
         android:paddingBottom="5dp"
         android:paddingRight="5dp"
-        android:paddingTop="15dp"
-        android:src="@drawable/rollingball_hdmi" />
+        android:paddingTop="5dp"
+        android:src="@drawable/grumpyface" />
+
+    <ImageButton
+        android:id="@+id/pianocat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/piano"
+        android:onClick="clickPiano"
+        android:layout_below="@id/cheez"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="50dp"
+        android:src="@drawable/piano" />
+    
+       <ImageButton
+        android:id="@+id/chipmunk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/pianocat"
+        android:contentDescription="@string/chipmunk"
+        android:onClick="clickChip"
+        android:layout_below="@id/grumpyface"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/actualchipmunk" />
 
 </RelativeLayout>
